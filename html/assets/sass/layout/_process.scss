@@ -1,0 +1,57 @@
+.process{
+    .step-box{
+        border-radius: 20px;
+        position: relative;
+        padding: 68px 0; 
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        transition: $transition;
+        @include media-query(1191px) {
+            margin-bottom: 32px;
+        }  
+        @include media-query(1191px) {
+            margin-bottom: 32px;
+        }  
+        h6{
+            position: relative;
+            z-index: 10;
+            span{
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 140%;
+                text-transform: capitalize;
+                color: $black-1;
+                margin-bottom: 0;
+            }
+            i{
+                margin-right: 24px;
+                font-size: 64px;
+            }         
+        }    
+        .background-text{
+            position: absolute;
+            z-index: 0;
+            right: 0;
+            top: calc(50% - 108px/2);
+            font-weight: 600;
+            font-size: 83px;
+            line-height: 130%;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: $gray-1;
+        } 
+        &:hover{
+            box-shadow: $shadow;
+            transition: $transition;
+            h6{
+                span{
+                    color: $accent-1;
+                }
+                i{
+                    color: $accent-1;
+                }         
+            }             
+        }
+    }
+}

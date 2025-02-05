@@ -1,0 +1,132 @@
+.pricing{
+    .nav-tabs {
+        border: 0;
+        margin-bottom: 24px;
+        justify-content: center;
+        .nav-item{
+            .nav-link {
+                font-weight: 500;
+                font-size: clamp(20px, 1.458vw, 42px);
+                line-height: 130%;
+                letter-spacing: 0.01em;
+                color: $black-1;
+                padding: 7px clamp(36px, 2.969vw, 72px);
+                background: $gray-1;
+                border: 1px solid $accent-1;
+                transition: $transition;
+                @include media-query(492px) {
+                    font-size: 20px;
+                    padding: 7px 36px;
+                } 
+                @include media-query(370px) {
+                    font-size: 18px;
+                    padding: 7px 28px;
+                } 
+                &.first{
+                    border-radius: 30px 0px 0px 30px;
+                }
+                &.second{
+                    border-radius: 0px 30px 30px 0px;
+                }
+                &.active,&:hover {
+                    transition: $transition;
+                    background: $accent-1;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .price-card{
+        padding: 32px 0;
+        background: $gray-1;
+        box-shadow: $shadow;
+        border-radius: 30px;
+        @include media-query(1199px) {
+            margin-bottom: 30px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: clamp(32px, 2.1vw, 60px);
+            line-height: 130%;
+            text-transform: capitalize;
+            color: $black-1;
+            margin-bottom: 16px;
+            text-align: center;
+            @include media-query(492px) {
+                font-size: 30px;
+            } 
+        }
+        .detail{
+            font-weight: 400;
+            font-size: clamp(13px, 0.83vw, 20px);
+            line-height: 150%;
+            color: $gray-4;
+            margin-bottom: clamp(24px, 1.66vw, 40px);
+            text-align: center;
+
+        }
+        .price-row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: clamp(24px, 1.66vw, 40px);
+            h2{
+                font-weight: 600;
+                font-size: clamp(42px, 3vw, 84px);
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+                color: $accent-1;
+                margin-right: 16px;   
+                margin-bottom: 0; 
+                @include media-query(492px) {
+                    font-size: 36px;
+                }           
+            }
+            span{
+                font-weight: 400;
+                font-size: clamp(14px, 1vw, 24px);
+                line-height: 140%;
+                color: $accent-1;
+                width: 8%;
+            }
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: clamp(24px, 1.66vw, 48px);
+            li{
+                padding: clamp(14px, 1vw, 24px) 0 clamp(14px, 1vw, 24px) clamp(24px, 1.66vw, 48px);
+                border-width: 1px 0px 0px;
+                border-style: solid;
+                border-color: $gray-2;
+                font-weight: 400;
+                font-size: clamp(14px, 1vw, 24px);
+                line-height: 140%;
+                color: $black-1;
+                display: flex;
+                align-items: center;
+                gap: clamp(16px, 1.25vw, 32px);
+                &:nth-child(even) {
+                    background-color: $white;
+                }
+                &:last-child{
+                    border-width: 1px 0px 1px;
+                    border-style: solid;
+                    border-color: $gray-2;  
+                }
+                i{
+                    font-size: clamp(18px, 1.25vw, 32px);
+                    color: $accent-1;
+                }
+                &.dull{
+                    color: $gray-3;
+                    i{
+                        color: $gray-3;
+                    }
+                }
+            }
+        }
+    }
+}

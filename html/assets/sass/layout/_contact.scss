@@ -1,0 +1,80 @@
+.contact{
+    padding: 50px 0 100px;
+    .contactform-block{
+        border-radius: 20px;
+        margin-top: -298px;
+        background-color: $gray-1;
+        padding: 64px 32px;
+        @include media-query(991px) {
+            margin-bottom: 32px;
+        }
+        @include media-query(492px) {
+            padding: 48px 16px;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 120%;
+            text-transform: capitalize;
+            color: $black-1;
+            margin-bottom: 8px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $gray-4;
+            margin-bottom: 24px;
+        }
+    }
+    .contact-block{
+        border-radius: 20px;
+        background-color: $gray-1;
+        padding: 64px 32px;
+        @include media-query(492px) {
+            padding: 48px 16px;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 120%;
+            margin-bottom: 24px;
+            color: $black-1;           
+        }
+        .block{
+            h6{
+                font-weight: 500;
+                font-size: 19px;
+                line-height: 140%;
+                color: $black-1; 
+                margin-bottom: 8px;              
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $black; 
+                font-family: $font-sec;
+                margin-bottom: 24px;
+            }
+            .mail{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $black; 
+                font-family: $font-sec;
+                margin-bottom: 0;
+                @include media-query(575px) {
+                    margin-bottom: 24px;
+                }
+            }
+            .number-link{
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 140%; 
+                color: $accent-1;       
+                margin-bottom: 8px;       
+            }
+        }
+    }
+}

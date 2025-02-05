@@ -1,0 +1,180 @@
+.footer{
+    background: url(../media/banner/footer-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    // height: 492px;
+    padding: 42px 0;
+    @include media-query(1800px) {
+        background-position: 55.556vw;
+    }
+    @include media-query(1399px) {
+        background: $white;
+        height: auto;
+        padding-bottom: 0;
+    }
+    
+   
+    .logo{
+        margin-bottom: 32px;    
+    }
+    .first-col{
+        @include media-query(992px) {
+            margin-bottom: 24px;
+        }
+        .about-title{
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: $black-1;
+            margin-bottom: 8px;
+        }
+        .detail{
+            margin-bottom: 24px;
+            width: 85%;
+            font-size: 16px;
+            line-height: 150%;
+            color: $gray-4;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 130%;
+            color: $black-1;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .footer-social-icon{
+            list-style: none;
+            padding: 16px 24px;
+            border-radius: 10px;
+            background: $gray-1;
+            margin-bottom: 24px;
+            display: inline-flex;
+            li{
+                margin-right: 32px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                i{
+                    color: $gray-4;
+                    background: transparent;
+                    font-size: 32px;
+                    transition: $transition;
+                    &:hover{
+                        transition: $transition;
+                        color: $accent-1;
+                    }
+                }               
+            }
+        }
+        
+    }
+    .second-col{
+        @include media-query(992px) {
+            margin-bottom: 24px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 140%;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            color: $black-1;
+        } 
+        .block-title{
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 140%; 
+            color: $black-1; 
+            margin-bottom: 8px;             
+        }
+        a,
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $black-1; 
+            margin-bottom: 16px;  
+        } 
+        .number-link{
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 130%; 
+            color: $accent-1; 
+            margin-bottom: 16px;  
+        }     
+    }
+    .third-col{
+        padding: 0 clamp(42px, 3.333vw, 80px) 0 clamp(54px, 4.167vw, 100px);
+        @include media-query(1399px) {
+            padding: 0 12px;
+        }
+        .title{
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 130%;
+            letter-spacing: 0.01em;
+            margin-bottom: 16px;
+            color: $white;
+            @include media-query(1399px) {
+                color: $black;
+            }
+        }      
+        p{
+            margin-bottom: 24px;
+            color: $white;
+            @include media-query(1399px) {
+                color: $black;
+            }
+        }
+        .input-group {
+            position: relative;
+            box-shadow: none;
+            padding: 20px 24px;
+            border-radius: 10px;
+            background: $white;
+            box-shadow: $shadow;
+            border: 0;
+            input,
+            .form-control {
+                background: transparent;
+                border: 0;
+                border-radius: 0;
+                padding: 0;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                position: relative;
+                margin-bottom: 0;
+                color: $black-1;
+            }
+            button{
+                background: $accent-1;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 13px 22px;
+                border: 1px solid $white;
+                border-radius: 0px 10px 10px 0px;
+                i{
+                    color: $white;
+                }
+            }
+        }
+    }
+    .copyright{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 140%;
+        color: $black-1;
+        @include media-query(1399px) {
+            text-align: center;
+        }
+        @include media-query(992px) {
+            font-size: 16px;
+            margin-top: 32px;
+        }
+    }
+}

@@ -1,0 +1,366 @@
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul.list-style,
+ol.list-style {
+  padding: 0;
+}
+
+ul.list-style li::marker,
+ol.list-style li::marker {
+  color: $accent-1;
+}
+
+.unstyled {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.form-group {
+  position: relative;
+}
+
+.input-group {
+  position: relative;
+  background: transparent;
+  box-shadow: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: $white;
+  border: 0;
+  
+}
+
+.form-control {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  margin-bottom: 0;
+  color: $black-2;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  &::placeholder {
+    color: $black-2;
+    opacity: 1;
+  }
+}
+.form-group {
+  .form-control{
+    background: $white;
+    padding: 16px 20px;
+    border-radius: 10px;
+  }
+}
+
+
+textarea {
+  height: 240px;
+}
+
+.input-group {
+  button {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: $black;
+  }
+}
+
+
+label {
+  &.error {
+    color: #bc0f0f;
+    margin-top: 10px;
+  }
+}
+
+.alert-message {
+  display: none;
+}
+
+
+.pagination-cus {
+  display: inline-flex;
+
+  li {
+    margin-right: 10px;
+
+    i {
+      font-size: 60px;
+      color: $black-1;
+    }
+
+    a {
+      display: block;
+    }
+
+    .link {
+      background: linear-gradient(282.51deg,
+          rgba(148, 158, 155, 0.2) -4.31%,
+          rgba(148, 158, 155, 0) 126.79%);
+      backdrop-filter: blur(2.5px);
+      border-radius: 10px;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: $font-28;
+      color: $black-1;
+
+      &.active {
+        color: $accent-1;
+      }
+
+      &:hover {
+        color: $accent-1;
+      }
+    }
+  }
+}
+iframe{
+  width: 100%;
+}
+
+.points {
+  li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      background: $accent-1;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+/*-------------------------
+    Typography
+-------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $gray-2;
+  background: $white;
+  font-weight: 400;
+  background-color: $white;
+  height: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  &.dark {
+    background: $black-1;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+table,
+hr {
+  margin: 0 0 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 750;
+  color: $black-1;
+}
+
+p {
+  font-size: clamp(14px, 0.833vw, 22px);
+  font-family: $font-sec;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  @media(max-width: 1199px) {
+    font-size: clamp(14px, 1.563vw, 18px);
+  }
+  @media(max-width: 991px) {
+    font-size: clamp(13.5px, 1.778vw, 16px);
+  }
+  @media(max-width: 767px) {
+    font-size: clamp(13px, 2.286vw, 14px);
+  }
+  @media(max-width: 575px) {
+    font-size: clamp(11px, 3.59vw, 14px);
+  }
+
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: unset;
+  transition: $transition;
+
+  &:hover {
+    color: $accent-1;
+    transition: $transition;
+  }
+}
+
+span {
+  display: inline-block;
+  font-size: $font-13;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+
+b,
+strong {
+  font-family: $font-primary;
+}
+
+
+.social-icon {
+  @include media-query(380px) {
+    justify-content: center !important;
+  }
+}
+
+
+
+
+/* ------------------------------------------------------------- *
+ * Custom scrollbar style
+/* ------------------------------------------------------------- */
+
+.tt-custom-scrollbar {
+	overflow-y: auto;
+}
+
+/* Works on Firefox */
+.tt-custom-scrollbar,
+.tt-sliding-sidebar-inner,
+.tt-sidebar {
+	scrollbar-width: thin;
+	scrollbar-color: #555 #2a2a2a;
+}
+select {
+	scrollbar-width: thin;
+	scrollbar-color: #666 #2a2a2a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.tt-custom-scrollbar::-webkit-scrollbar,
+.tt-sliding-sidebar-inner::-webkit-scrollbar,
+.tt-sidebar::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+select::-webkit-scrollbar {
+	width: 10px;
+}
+.tt-custom-scrollbar::-webkit-scrollbar-track,
+.tt-sliding-sidebar-inner::-webkit-scrollbar-track,
+.tt-sidebar::-webkit-scrollbar-track,
+select::-webkit-scrollbar-track {
+	background: #2a2a2a;
+}
+.tt-custom-scrollbar::-webkit-scrollbar-thumb,
+.tt-sliding-sidebar-inner::-webkit-scrollbar-thumb,
+.tt-sidebar::-webkit-scrollbar-thumb {
+	background-color: #555;
+	border-radius: 50px;
+}
+select::-webkit-scrollbar-thumb {
+	background-color: #666;
+	border-radius: 50px;
+}
+
+
+/* ------------------------------------------------------------- *
+ * Smooth Scrollbar
+ * Source: https://github.com/idiotWu/smooth-scrollbar/
+/* ------------------------------------------------------------- */
+
+/* Hide default scrollbar */
+body:not(.is-mobile).ui-smooth-scroll {
+	overflow: hidden;
+}
+
+/* Scroll content (added if <body> contain class "ui-smooth-scroll". Disabled on mobile devices!) */
+body:not(.is-mobile).ui-smooth-scroll #scroll-container { 
+	width: auto;
+	height: 100vh;
+	overflow: auto;
+	margin: 0;
+}
+
+/* Styling scrollbar */
+.scrollbar-track {
+	background: transparent !important;
+	z-index: 99999 !important;
+}
+.scrollbar-track:hover {
+	/*background: rgba(222, 222, 222, 0.1) !important;*/
+}
+.scrollbar-thumb {
+	background: #DDD !important;
+	opacity: .75;
+	transition: opacity 0.2s ease-in-out;
+}
+.scrollbar-track:hover .scrollbar-thumb {
+	opacity: .5;
+}

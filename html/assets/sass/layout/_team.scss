@@ -1,0 +1,89 @@
+.team{
+    .team-box{
+        position: relative;
+        width: 100%;
+        box-shadow: $shadow;
+        border-radius: 20px;
+        overflow: hidden;
+        @include media-query(1199px) {
+            margin-bottom: 30px;
+        }
+        img{
+            border-radius: 20px 0px 0px 20px;
+            width: 80.6220095694%;
+            -webkit-transition: $transition2;
+                transition: $transition2;
+        }
+        .right-column{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 19.3779904306%;
+            border-radius: 0px 20px 20px 0px;
+            height: 100%;
+            background-color: $gray-1;
+            span{
+                background-color: $accent-1;
+                color: $white;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 130%;
+                text-align: center;
+                text-transform: uppercase;
+                height: 100px;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                border-radius: 0px 20px 0px 0px;
+                width: 100%;
+            }
+            .social-icons{
+                padding-left: 0;
+                list-style: none;
+                margin-bottom: 0;
+                padding: clamp(30px, 2vw, 50px) 0;
+                li{
+                    text-align: center;
+                    margin-bottom: clamp(24px, 1.66vw, 42px);
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        i{
+                            font-size: clamp(24px, 1.66vw, 42px);
+                            color: $black;
+                            &:hover{
+                                color: $accent-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .title{
+            width: fit-content;
+            position: absolute;
+            left: 0;
+            bottom: clamp(40px, 3.33vw, 84px);
+            border-radius: 0px clamp(32px, 2.1vw, 54px) clamp(32px, 2.1vw, 54px) 0px;
+            padding: clamp(14px, 0.83vw, 24px);
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: clamp(20px, 1.2vw, 30px);
+            text-align: center;
+            line-height: 140%;
+            text-transform: capitalize;
+            background-color: $gray-1;
+            color: $accent-1;
+        }
+        &:hover{
+            img{
+                -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    -webkit-transition: $transition2;
+                transition: $transition2;
+            }
+        }
+    }
+}

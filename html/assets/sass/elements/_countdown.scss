@@ -1,0 +1,24 @@
+.countdown{
+    padding: 0;
+    // margin-bottom: 48px;
+    li{
+        font-weight: 700;
+        font-size: 61px;
+        line-height: 125%;
+        color: $white;
+        margin-right: 40px;
+        display: inline-flex;
+        align-items: center;
+        span{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: #FFFFFF;
+            transform: rotate(-90deg);
+            padding: 0;
+            background: none;
+            border-radius: 0;
+            margin-left: -6px;
+        }
+    }
+}

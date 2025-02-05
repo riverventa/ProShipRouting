@@ -1,0 +1,32 @@
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    h2{
+        font-weight: 600;
+        font-size: clamp(36px, 2.5vw, 64px);
+        color: $black-1;
+        text-transform: uppercase;
+        line-height: 120%;
+        margin-bottom: 12px;
+        
+        @include media-query(768px) {
+            font-size: 38px;
+        }
+        @include media-query(490px) {
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+    }
+    p{
+        color: $gray-4;
+        line-height: 130%;
+        margin-bottom: 0;
+        br{
+            @include media-query(492px) {
+                display: none;
+            }
+
+        }
+    }
+}
+

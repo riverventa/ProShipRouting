@@ -1,0 +1,395 @@
+.color-primary{
+    color:$accent-1;
+}
+.bg-white{
+    background-color: $white !important;
+}
+.bg-primary{
+    background-color:$accent-1 !important;
+}
+.color-dark{
+    color:$black;
+}
+.bg-dark{
+    background-color: $black !important;
+}
+.color-dark-2{
+    color:$black-1;
+}
+.bg-dark-2{
+    background-color:$black-1;
+}
+.color-dark-3{
+    color:$black-2;
+}
+.bg-dark-3{
+    background-color:$black-2;
+}
+.color-white{
+    color:$white; 
+}
+.color-gray{
+    color:$gray-1;
+}
+.bg-gray{
+    background-color: $gray-1;
+}
+.color-gray-2{
+    color:$gray-2;
+}
+.bg-gray-2{
+    background-color:$gray-2;
+}
+.color-gray-3{
+    color:$gray-3;
+}
+.bg-gray-3{
+    background-color:$gray-3;
+}
+.color-gray-4{
+    color:$gray-4;
+}
+.bg-gray-4{
+    background-color:$gray-4;
+}
+
+.primary-hover{
+    &:hover{
+        color: $black-1;
+    }
+}
+.secondery-hover{
+    &:hover{
+        color: $white;
+    }
+}
+
+.fs-247{
+    font-size: $font-247;
+    @include media-query(1200px) {
+        font-size: 210px;
+    }
+    @include media-query(900px) {
+        font-size: 190px;
+    }
+    @include media-query(768px) {
+        font-size: 160px;
+    }
+    @include media-query(490px) {
+        font-size: 140px;
+    }
+    @include media-query(380px) {
+        font-size: 120px;
+    }
+}
+.fs-205{
+    font-size:$font-205;
+    @include media-query(1200px) {
+        font-size: 188px;
+    }
+    @include media-query(768px) {
+        font-size: 152px;
+    }
+    @include media-query(490px) {
+        font-size: 128px;
+    }
+    @include media-query(400px) {
+        font-size: 88px;
+    }
+}
+.fs-171{
+    font-size:$font-171;
+    @include media-query(1200px) {
+        font-size: 148px;
+    }
+    @include media-query(992px) {
+        font-size: 124px;
+    }
+    @include media-query(762px) {
+        font-size: 98px;
+    }
+    @include media-query(580px) {
+        font-size: 72px;
+    }
+    @include media-query(490px) {
+        font-size: 52px;
+    }
+}
+.fs-143{
+    font-size:$font-143;
+    @include media-query(1200px) {
+        font-size: 128px;
+    }
+    @include media-query(768px) {
+        font-size: 98px;
+    }
+    @include media-query(768px) {
+        font-size: 72px;
+    }
+    @include media-query(490px) {
+        font-size: 48px;
+    }
+}
+.fs-99{
+    font-size:$font-99;
+    @include media-query(1200px) {
+        font-size: 72px;
+    }
+    @include media-query(992px) {
+        font-size: 58px;
+    }
+    @include media-query(768px) {
+        font-size: 49px;
+    }
+    @include media-query(490px) {
+        font-size: 38px;
+    }
+}
+.fs-83{
+    font-size:$font-83;
+    @include media-query(1200px) {
+        font-size: 59px;
+    }
+    @include media-query(900px) {
+        font-size: 49px;
+    }
+    @include media-query(490px) {
+        font-size: 38px;
+    }
+}
+.fs-69{
+    font-size:$font-69;
+    @include media-query(1200px) {
+        font-size: 52px;
+    }
+    @include media-query(768px) {
+        font-size: 42px;
+    }
+    @include media-query(490px) {
+        font-size: 38px;
+    }
+}
+.fs-57{
+    font-size:$font-57;
+    @include media-query(1200px) {
+        font-size: 48px;
+    }
+    @include media-query(768px) {
+        font-size: 42px;
+    }
+    @include media-query(490px) {
+        font-size: 38px;
+    }
+}
+.fs-48{
+    font-size:$font-48;
+    @include media-query(1250px) {
+        font-size: 42px;
+    }
+    @include media-query(768px) {
+        font-size: 38px;
+    }
+    @include media-query(490px) {
+        font-size: 32px;
+    }
+}
+.fs-40{
+    font-size:$font-40;
+    @include media-query(1200px) {
+        font-size: 35px;
+    }
+    @include media-query(490px) {
+        font-size: 25px;
+    }
+}
+.fs-33{
+    font-size:$font-33;
+    @include media-query(992px) {
+        font-size: 28px;
+    }
+    @include media-query(580px) {
+        font-size: 21px;
+    }
+}
+.fs-28{
+    font-size:$font-28;
+    @include media-query(1200px) {
+        font-size: 18px;
+    }
+}
+.fs-23{
+    font-size:$font-23;
+    @include media-query(1200px) {
+        font-size: 18px;
+    }
+}
+.fs-19{
+    font-size:$font-19;
+    @include media-query(1200px) {
+        font-size: 18px;
+    }
+}
+.fs-16{
+    font-size:$font-16;
+    @include media-query(490px) {
+        font-size: 14px;
+    }
+}
+.fs-13{
+    font-size:$font-13;
+}
+.fs-11{
+    font-size:$font-11;
+}
+.fw-3{
+    font-weight: 300;
+}
+.fw-4{
+    font-weight: 400;
+}
+.fw-5{
+    font-weight: 500;
+}
+.fw-6{
+    font-weight: 600;
+}
+.fw-7{
+    font-weight: 700;
+}
+.lh-100{
+    line-height:100%;
+}
+.lh-110{
+    line-height: 110%;
+}
+.lh-120{
+    line-height: 120%;
+}
+.lh-130{
+    line-height: 130%;
+}
+.lh-140{
+    line-height: 140%;
+}
+.lh-150{
+    line-height: 150%;
+}
+.lh-160{
+    line-height: 160%;
+}
+.lh-180{
+    line-height: 180%;
+}
+.ls-1{
+    letter-spacing: -0.01em;
+}
+.ls-0{
+    letter-spacing: -0.00em;
+}
+.ls-2{
+    letter-spacing: -0.02em;
+}
+.ls-3{
+    letter-spacing: -0.03em;
+}
+.ls-4{
+    letter-spacing: -0.04em;
+}
+.hover-animation{
+    transition: $transition;
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+.transition{
+    transition: $transition;
+}
+.w-150{
+    width: 150px;
+    @include media-query(768px) {
+        width: 100%;
+    }
+
+}
+.h-220{
+    height: 220px;
+}
+.mt-30-m{
+    @include media-query(900px) {
+       margin-top: 30px;
+     }
+}
+.mt-30-sm{
+    @include media-query(490px) {
+       margin-top: 30px;
+    }
+}
+.br-25{
+    border-radius: 25px;
+}
+.br-15{
+    border-radius: 15px;
+}
+.border-bottom{
+    border-bottom: 2px solid $gray-3!important;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+        a{
+            background: $white;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: grid;
+            place-items: center;
+            place-content: center;
+            margin: 0 8px;
+            transition: $transition;
+            i{
+                transition: $transition;
+                color: $black-2;
+                font-size: 18px;
+            }
+            &:hover{
+                background: $accent-1;
+                i{  
+                    color: $white;
+                }
+            }
+        }
+    }
+    &.st-2{
+        justify-content: center;
+        li{
+            a{
+                background: $accent-1;
+                i{
+                    color: $gray-1;
+                }
+                &:hover{
+                    background: $gray-1;
+                    i{  
+                        color: $accent-1;
+                    }
+                }
+            }
+        }
+    }
+}
+.border-white{
+    border: 1px solid $white;
+}
+.font-sec{
+    font-family: $font-sec;
+}
+.radius-10{
+    border-radius: 10px;
+}
+.color-hover{
+    &:hover{
+        color: $accent-1;
+    }
+}

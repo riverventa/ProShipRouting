@@ -1,0 +1,32 @@
+.page-start-banner{
+    background: url(../media/banner/banner.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-top: 100px;
+    height: clamp(300px, 26.042vw, 600px);   
+    display: grid;
+    align-content: center;
+    @include media-query(1399px) {
+        margin-top: 75px;
+    }
+   
+    @include media-query(767px) {
+        height: 250px;   
+    }
+    @include media-query(492px) {
+        height: 210px;   
+    }
+    .title{
+        font-weight: 600;
+        font-size: clamp(55px, 4.5vw, 100px);
+        line-height: 120%;
+        letter-spacing: -0.0em; 
+        text-transform: uppercase;
+        color: $white;
+        text-align: center;
+        @include media-query(492px) {
+            font-size: 42px;
+        }
+    }
+}

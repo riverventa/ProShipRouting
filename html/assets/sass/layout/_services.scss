@@ -1,0 +1,106 @@
+.services{
+    .service-box{
+        background: $gray-1;
+        padding: clamp(42px, 3.333vw, 84px) clamp(16px, 1.354vw, 42px) clamp(36px, 3.125vw, 78px);
+        border-radius: 20px;
+        margin-bottom: 32px;
+        box-shadow: $shadow;
+        -webkit-transition: $transition2;
+        transition: $transition2;
+        img{
+            margin-bottom: 16px;
+            &.default{
+                display: block;
+                margin: 0 auto;
+            }
+            &.onhover{
+                display: none;
+            }
+        }
+        h6{
+            font-weight: 500;
+            font-size: clamp(18px, 1.2vw, 32px);
+            line-height: 140%;
+            text-align: center;
+            text-transform: capitalize;
+            color: $black; 
+            margin-bottom: 16px; 
+            margin-top: 12px; 
+            -webkit-transition: $transition2;
+            transition: $transition2;        
+        }
+        p{
+            font-weight: 400;
+            font-size: clamp(14px, 0.83vw, 24px);
+            line-height: 150%;           
+            color: $gray-4; 
+            -webkit-transition: $transition2;
+            transition: $transition2;        
+            margin-bottom: 0;
+        }
+        &:hover{
+            background: $accent-1;
+            box-shadow: $shadow;
+            -webkit-transition: $transition2;
+            transition: $transition2;
+            img{
+                &.default{
+                    display: none;
+                }
+                &.onhover{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            h6{
+            -webkit-transition: $transition2;
+            transition: $transition2;        
+                color: $white;
+            }
+            p{         
+            -webkit-transition: $transition2;
+            transition: $transition2;        
+                color: $gray-1; 
+            }
+        }
+    }   
+    .service-box{
+        &.active{
+            background: $accent-1;
+            img{
+                &.default{
+                    display: none;
+                }
+                &.onhover{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            h6{
+                color: $white;
+            }
+            p{         
+                color: $gray-1; 
+            }
+            
+            &:hover{
+                background: $gray-1;
+                img{
+                    &.default{
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    &.onhover{
+                        display: none;
+                    }
+                }
+                h6{
+                    color: $black;         
+                }
+                p{           
+                    color: $gray-4; 
+                }
+            }
+        }   
+    }
+}

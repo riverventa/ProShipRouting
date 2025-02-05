@@ -1,0 +1,90 @@
+.check-out{
+    padding-bottom: 24px;
+    .content{
+        .img-block{
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            span{
+                padding: 8px 12px;
+                border-radius: 3px;
+                font-weight: 500;
+                font-size: 16px;
+                left: 32px ;
+                bottom: 32px;
+                font-family: $font-sec;
+                &.st-2{
+                    bottom: unset;
+                    left: unset;
+                    top: 16px;
+                    right: 16px;
+                }
+            }
+        }
+        h4{
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            text-transform: capitalize;
+            font-family: $font-sec;
+            color: $accent-1;
+        }
+        p{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            color: $black;
+            margin-bottom: 16px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                font-family: $font-sec;
+                margin-right: 14px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 140%;
+                color: $black-2;
+                svg{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .propertie-slider{
+        margin-bottom: 72px;
+        .item{
+            padding: 0 14px;
+            .content{
+                .img-block{
+                    img{
+                        display: block;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                h4{
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1; 
+                            line-clamp: 1; 
+                    -webkit-box-orient: vertical;
+                    
+                    @include media-query(768px) {
+                        -webkit-line-clamp: 2; 
+                            line-clamp: 2;
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            bottom: -50px;
+        }
+    }
+}

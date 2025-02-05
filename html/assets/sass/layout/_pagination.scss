@@ -1,0 +1,80 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+        padding: 0 22px;
+        @include media-query(580px) {
+            padding: 0 12px;
+        }
+        @include media-query(490px) {
+            padding: 0 6px;
+        }
+
+        a{
+            width: 48px;
+            height: 47px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 21px;
+            color: $black-1;
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            @include media-query(490px) {
+                width: 42px;
+                height: 41px;
+                font-size: 18px;
+            }
+
+            &.page{
+                border: 2px solid $accent-1;
+                border-radius: 100px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: -4px;
+                    top: calc(50% - 4px);
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 6px;
+                    background: $accent-1;
+                    z-index: 100;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: -2px;
+                    top: calc(53%);
+                    width: 5px;
+                    height: 5px;
+                    background: $white;
+                    z-index: 10;
+                }
+            }
+            i{
+                font-size: 42px;
+                color: $black-1;
+                @include media-query(490px) {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+.dark{
+    .pagination{
+        li{
+            a{
+                color: $white;
+                i{
+                    font-size: 42px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

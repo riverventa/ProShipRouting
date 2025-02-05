@@ -1,0 +1,179 @@
+
+.cus-btn {
+    padding: clamp(8px, 0.625vw, 16px) clamp(24px, 1.66vw, 42px);
+    border: 2px solid $accent-1;
+    font-size: clamp(18px, 1.2vw, 30px);
+    transition: $transition;
+    background: $black-1;
+    border-radius: 0px;
+    font-weight: 700;
+    // font-size: $font-21;
+    color: $white;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.5s;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: $black;
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        top: 100%;
+        left: 100%;
+        transition: all 0.7s;
+    }
+
+    &:hover {
+        color: $white;
+
+        &:before {
+            top: -114px;
+            left: -33px;
+            background: $accent-1;
+            transition: $transition;
+        }
+    }
+
+    &.bordered {
+        color: $black-1;
+        background: $white;
+        border: 2px solid $accent-1;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background: $black-1;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            top: 100%;
+            left: 100%;
+            transition: all 0.7s;
+
+        }
+
+        &:hover {
+            color: $white;
+
+            &:before {
+                top: -114px;
+                left: -33px;
+                background: $accent-1;
+                transition: $transition;
+            }
+        }
+
+    }
+
+    &.dark {
+        color: $white;
+        background: $accent-1;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background: $black;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            top: 100%;
+            left: 100%;
+            transition: all 0.7s;
+        }
+
+        &:hover {
+            color: $black;
+
+            &:before {
+                top: -114px;
+                left: -33px;
+                background: $white;
+                transition: $transition;
+            }
+        }
+    }
+
+    &.light {
+        color: $accent-1;
+        background: $white;
+
+        // &:hover {
+        //     color: $white;
+        //     background: $accent-1;
+        // }
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background: $white;
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            top: 100%;
+            left: 100%;
+            transition: all 0.7s;
+        }
+
+        &:hover {
+            color: $white;
+
+            &:before {
+                top: -114px;
+                left: -33px;
+                background: $accent-1;
+                transition: $transition;
+            }
+        }
+    }
+}
+
+.phone-link {
+    font-weight: 500;
+    font-size: clamp(22px, 1.458vw, 36px);
+    line-height: 120%;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    i {
+        font-size: clamp(24px, 1.66vw, 42px);
+        color: $accent-1;
+        margin-right: clamp(10px, 00.83vw, 20px);
+    }
+
+    &:hover {
+        color: $accent-1;
+
+    }
+
+}
+
+.form-btn {
+    width: 100%;
+    padding: 20px 0;
+    background: $accent-1;
+    font-family: $font-sec;
+    text-transform: capitalize;
+    border: 2px solid $accent-1;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 130%;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        color: $accent-1;
+        background: $white;
+    }
+
+}

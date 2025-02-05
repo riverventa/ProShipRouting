@@ -1,0 +1,129 @@
+/*---------------------------------------------"
+Template Name: Corpix
+Template URL: https://uiparadox.co.uk/templates/corpix
+Description: Corpix - Multi Purpose HTML template                                             
+Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Reset Styles
+|___ Responsive
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+$accent-1: #1A3F6D;
+$gradient: linear-gradient(335.9deg, #38000C -45.32%, #D11B41 61.98%, #2B0009 162.78%);
+$font-primary: 'Poppins', sans-serif;
+$font-sec: 'Lato', sans-serif;
+$font-awesome: "Font Awesome 5 Pro";
+$transition: all 0.5s ease-in-out;
+$transition2: all 0.6s linear 0s;
+$shadow: 37px 14px 16px rgba(0, 0, 0, 0.01), 9px 3px 10px rgba(0, 0, 0, 0.09);
+$black: #2C2D2F;
+$black-1: #1B1C1E;
+$black-2: #0D0D0D;
+$white: #FAFAFA;
+$gray-1: #F0F2F4;
+$gray-2: #D6D8DB;
+$gray-3: #AFB1B6;
+$gray-4: #797D86;
+$font-247: 247px;
+$font-205: 205px;
+$font-171: 171px;
+$font-143: 143px;
+$font-99: 99px;
+$font-83: 83px;
+$font-69: 69px;
+$font-57: 57px;
+$font-48: 48px;
+$font-40: 40px;
+$font-33: 33px;
+$font-28: 28px;
+$font-23: 23px;
+$font-19: 19px;
+$font-16: 16px;
+$font-13: 13px;
+$font-11: 11px;
+
+.img{
+  background: url(../media/banner/inner-banner-bg.png);
+}
+/*-------------------------
+    Responsive
+-------------------------*/
+@import "helpers/mixins";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+ 
+/*-------------------------
+    Spacing
+-------------------------*/
+@import "helpers/spacing";
+
+/*-------------------------
+    Helper Classes
+-------------------------*/
+@import "helpers/classes";
+
+/*-------------------------
+  Buttons
+-------------------------*/
+@import "elements/buttons";
+
+/*-------------------------
+  Headings
+-------------------------*/
+@import "elements/heading";
+
+/*-------------------------
+  Preloader Styles
+-------------------------*/
+@import "layout/preloader";
+
+// @import "layout/modal";
+
+@import "layout/header";
+
+@import "layout/footer";
+
+@import "layout/banner";
+
+@import "layout/about";
+
+@import "layout/contact";
+
+@import "layout/process";
+
+@import "layout/showcase";
+
+@import "layout/testimonial";
+
+@import "layout/blog";
+
+@import "layout/services";
+
+@import "layout/page-title";
+
+@import "layout/team";
+
+@import "layout/pricing";

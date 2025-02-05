@@ -1,0 +1,21 @@
+.popup{
+    border-radius: 25px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    display: none;
+    transition: $transition;
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    img{
+        border-radius: none!important;
+    }
+    .content{
+        padding: 18px 24px;
+        background: $black;
+        display: inline-block;
+        margin-top: -4px;
+        
+    }
+}

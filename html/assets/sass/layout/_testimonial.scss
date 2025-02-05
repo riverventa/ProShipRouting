@@ -1,0 +1,48 @@
+.testimonials{
+    .testimonial-box{
+        position: relative;
+        background: $white;
+        padding: 24px 0;
+        border-radius: 30px;
+        box-shadow: $shadow;
+        overflow: hidden;
+        @include media-query(1199px) {
+            margin-bottom: 30px;
+        }
+        .upper-row{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            img{
+                flex-shrink: 0;
+                border-radius: 0px clamp(20px, 1.563vw, 32px) clamp(20px, 1.563vw, 32px) 0px;
+                width: clamp(80px, 6vw, 160px);
+            }
+            h6{
+                font-weight: 500;
+                font-size: clamp(20px, 1.2vw, 30vw);
+                line-height: 140%;
+                margin-bottom: 0;
+                color: $black-1;
+            }
+        }
+        .review{
+            font-family: $font-sec;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $gray-1;
+            text-align: center;
+            background: $accent-1;
+            margin: clamp(16px, 1.25vw, 30vw) 0 0 clamp(16px, 1.25vw, 30vw);
+            padding: clamp(40px, 3.333vw, 84vw) clamp(16px, 1.25vw, 30vw);
+            border-radius: 30px 0px 0px 30px;
+        }
+        .quote{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: clamp(60px, 4.167vw, 100px);
+        }
+    }
+}
