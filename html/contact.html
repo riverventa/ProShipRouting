@@ -313,6 +313,25 @@
                     });
                 });
             </script>
+            <script>
+                document.querySelector('.contact-form').addEventListener('submit', function(event) {
+                    console.log('Попытка отправки формы!');
+                    event.preventDefault(); // Останавливаем стандартное поведение
+            
+                    const form = event.target; // Получаем саму форму
+                    const name = form.querySelector('input[name="name"]').value;
+                    const email = form.querySelector('input[name="email"]').value;
+                    const topic = form.querySelector('input[name="topic"]').value;
+                    const message = form.querySelector('textarea[name="message"]').value;
+            
+                    if (name && email && topic && message) {
+                        console.log('Данные верны! Отправка формы...');
+                        form.submit(); // После проверки отправляем форму вручную
+                    } else {
+                        console.log('Заполните все поля!');
+                    }
+                });
+            </script>
               
     </body>
 
