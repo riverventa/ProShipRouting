@@ -3208,10 +3208,17 @@ body:not(.is-mobile).ui-smooth-scroll #scroll-container {
 .pricing .price-card ul li.dull i {
   color: #AFB1B6;
 }
-.footer-logo img {
-  width: 200px !important;
-  height: auto !important;
-  max-width: 200px !important;
-  min-width: 100 !important;
-  display: block !important;
+ 
+ @media (max-width: 768px) {
+  .mobile-menu { 
+      display: block; /* Меню всегда открыто */
+      top: 0; 
+      left: 0; 
+      background: white; /* Фон меню */
+      z-index: 1000; /* Выше других элементов */
+      padding: 10px; /* Паддинг для улучшения внешнего вида, если нужно */
+  }  
+  .menu-toggle {
+      display: none; /* Убираем кнопку для открытия/закрытия */
+  }
 }
