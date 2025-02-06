@@ -266,6 +266,20 @@
             <script src="assets/js/vendor/jquery-validator.js"></script>
             <!-- Site Scripts -->
             <script src="assets/js/app.js"></script>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const submitButton = document.querySelector('.contact-form button[type="submit"]');
+                  
+                  if (submitButton) {
+                    submitButton.addEventListener('click', function(event) {
+                      event.preventDefault(); // Останавливаем стандартное поведение формы
+                      alert('Button clicked!');
+                    });
+                  }
+                });
+              </script>
+                
     </body>
 
 </html>

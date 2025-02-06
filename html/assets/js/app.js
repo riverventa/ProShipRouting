@@ -1,7 +1,4 @@
-// Template Name: Corpix
-// Template URL: https://uiparadox.co.uk/templates/corpix
-// Description: Corpix - Multi Purpose HTML template                                             
-// Version: 1.0.0
+
 
 (function (window, document, $, undefined) {
   "use strict";
