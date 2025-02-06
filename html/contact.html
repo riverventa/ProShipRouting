@@ -279,7 +279,41 @@
                   }
                 });
               </script>
-                
+              <script>
+                // Ждем, пока страница загрузится
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Находим форму по классу
+                    const form = document.querySelector('.contact-form');
+            
+                    // Добавляем обработчик на отправку формы
+                    form.addEventListener('submit', function(event) {
+                        // Отменяем стандартное поведение (отправку формы), чтобы увидеть логи
+                        event.preventDefault();
+                        
+                        // Логируем данные, которые отправляются
+                        const formData = new FormData(form);
+                        formData.forEach((value, key) => {
+                            console.log(key + ": " + value);
+                        });
+            
+                        // Пример проверки: если все поля заполнены, отправляем форму
+                        const name = form.querySelector('input[name="name"]').value;
+                        const email = form.querySelector('input[name="email"]').value;
+                        const topic = form.querySelector('input[name="topic"]').value;
+                        const message = form.querySelector('textarea[name="message"]').value;
+            
+                        if (name && email && topic && message) {
+                            console.log("Все данные введены. Попытка отправки...");
+            
+                            // Если все данные правильные, отправляем форму
+                            form.submit(); // Это вызовет стандартную отправку формы
+                        } else {
+                            console.log("Заполните все поля!");
+                        }
+                    });
+                });
+            </script>
+              
     </body>
 
 </html>
