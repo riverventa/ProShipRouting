@@ -167,8 +167,8 @@
       if ($(".showcase-slider").length) {
         $(".showcase-slider").slick({
           infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToShow: 4,
+          slidesToScroll: 1,
           arrows: false,
           centerPadding: '0px',
           centerMode: true,
